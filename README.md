@@ -1,10 +1,10 @@
 # Artificial Intelligence Lab Programs
 
-This repository contains Python implementations of fundamental Artificial Intelligence concepts, focusing on different types of agents and environment simulations.
+This repository contains Python implementations of fundamental Artificial Intelligence concepts, focusing on agent simulations and search algorithms.
 
 ## Project Structure
 
-The repository is organized into laboratory exercises, starting with basic agent behaviors and moving toward environment interactions.
+The repository is organized into laboratory exercises, starting with basic agent behaviors and moving toward environment interactions and tree searching.
 
 ### Lab 1: Agent Simulations
 
@@ -19,9 +19,20 @@ The repository is organized into laboratory exercises, starting with basic agent
 
 * **p5.py: Grid-Based Vacuum Cleaner Simulation**
     * Simulates a 4x4 room environment represented as a grid where all cells are initially dirty.
-    * Features random dirt generation (0 for clean, 1 for dirty) across the grid.
-    * Implements a systematic cleaning process that visits every cell and activates the vacuum in dirty locations.
-    * Includes a performance metric calculation based on the percentage of cells cleaned relative to the total grid size.
+    * Features random dirt generation across the grid.
+    * Implements a systematic cleaning process and calculates performance metrics.
+
+### Lab 2: Tree Search Algorithms
+
+* **p6.py: Breadth-First Search (BFS)**
+    * Implements BFS for a tree structure starting from the root node.
+    * Explores all neighboring nodes at the present depth level before moving to the next level using a Queue (FIFO) approach.
+    * Output displays the level-order traversal (e.g., 1 2 3 4 5 6 7).
+
+* **p7.py: Depth-First Search (DFS)**
+    * Implements DFS for a tree structure starting from the root node.
+    * Explores as far as possible along each branch before backtracking using a recursive/Stack (LIFO) approach.
+    * Output displays the depth-first traversal (e.g., 1 2 4 5 3 6 7).
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/labspider/ai-lab/blob/main/LICENSE) file for details.
